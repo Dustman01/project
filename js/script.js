@@ -1,1 +1,2 @@
-prompt("what is your name","")
+let Name = prompt("what is your name","");
+alert(`Hello ${Name}`);
