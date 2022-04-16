@@ -348,21 +348,47 @@ let db = {
 
 
 
-const myPromise = new Promise((resolve, reject) =>{
-    fetch('https://jsonplaceholder.typicode.com/todos/5')
-        .then(response => response.json())
-        .then(json => console.log(json))
-        .cetch(error => console.log(error));
-});
+// const myPromise = new Promise((resolve, reject) =>{
+//     fetch('https://jsonplaceholder.typicode.com/todos/5')
+//         .then(response => response.json())
+//         .then(json => console.log(json))
+//         .cetch(error => console.log(error));
+// });
 
 
-myPromise
-    .then(value =>{
+// myPromise
+//     .then(value =>{
 
-    })
-    .catch(error => {
+//     })
+//     .catch(error => {
 
-    });
+//     });
 
 
+// let numberOfFilms = prompt('сколько фильмов вы уже посмотрели?');
 
+// let personalMuvieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     geners: [],
+//     privat: false
+// };
+
+
+const number = [87, 5, 1, -3, 77];
+const number2 = [];
+
+for(let i = 0; i < number.length; i++){
+    
+    for(let y = 0  ; y < number.length; y++ ){
+        if(number[i] < number[y]){
+            let temp = number[y];
+            let temp2 = number[i];
+            number[y] = temp2;
+            console.log( number[i] = temp);
+        } 
+    }
+}
+
+console.log( number );
