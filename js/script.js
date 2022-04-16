@@ -376,19 +376,31 @@ let db = {
 // };
 
 
-const number = [87, 5, 1, -3, 77];
-const number2 = [];
+// const number = [87, 5, 1, -3, 77];
+// const number2 = [];
 
-for(let i = 0; i < number.length; i++){
+// for(let i = 0; i < number.length; i++){
     
-    for(let y = 0  ; y < number.length; y++ ){
-        if(number[i] < number[y]){
-            let temp = number[y];
-            let temp2 = number[i];
-            number[y] = temp2;
-            console.log( number[i] = temp);
-        } 
-    }
-}
+//     for(let y = 0  ; y < number.length; y++ ){
+//         if(number[i] < number[y]){
+//             let temp = number[y];
+//             number[y] = number[i];
+//             console.log( number[i] = temp);
+//         } 
+//     }
+// }
 
-console.log( number );
+// console.log( number );
+
+
+const text = 'hello my world';
+const textArrey = text.split('');
+let textArrey2 = [];
+
+textArrey.forEach(value => {
+    if(value !== ' '){
+        textArrey2.push(value);
+    }
+});
+
+console.log(textArrey2.join(''));
